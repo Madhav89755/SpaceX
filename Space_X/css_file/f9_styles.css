@@ -51,3 +51,14 @@
 #slideshow a:link, #slideshow a:visited{
     color: gray;
 }
+
+/*anchor tags*/
+.engineLink, .over{
+    margin: 30px 0px 30px 0px;
+    height: 0px;
+    display: inline-block;
+}
+.engineLink:hover, .over:hover{
+    color: white;
+    text-decoration: none;
+}
