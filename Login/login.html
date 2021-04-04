@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript" src="login.js"></script>
+	<script>
+		var a;
+		function fcs(a){
+			var d = document.getElementById(a).style.boxShadow='2px 2px 2px 2px gray';
+			return d;
+		}
+		function blr(a){
+			var e = document.getElementById(a).style.boxShadow='0px 0px white';
+			return e;
+		}
+	</script>
+</head>
+<body>
+	<div class="form_section">
+		<h1 style="font-family: 'Arial Rounded MT', 'Lucida Handwriting';">Login</h1>
+			<form name='loginFrm' method="get" class="Login" onsubmit=" return sbmt()">
+				<p id="alert"></p>
+				<input type="text" name="username" id="username" 
+					placeholder="Enter E-mail" title="Enter email address or username"
+					onfocus="fcs('username')" onblur="blr('username')">
+				<div class="required" id="reqUname">&nbsp; </div>
+				<br>
+				<input type="password" name="password" id="password"
+					placeholder="Password" title="Enter password"
+					onfocus="fcs('password')" onblur="blr('password')">
+				<div class="required" id="reqPass">&nbsp; </div>
+				<br>
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<br>
+				<a href="" id="frgtPwd" title="Forgot you password? Click here!!">Forgot Password</a>
+				<input type="submit" id="myBtn"
+					title="Submit Button Click to submit form" value="Login"
+					onfocus="fcs('myBtn')" onblur="blr('myBtn')">
+			</form>
+		<hr style="margin-bottom: 20px;">
+		<p style="font-weight: bold; color: gray; ">OR Not a user???<br>
+		<button onclick="href=window.location.href='newUser.html'" id='Bt' class="createBtn"
+			onfocus="fcs('Bt')" onblur="blr('Bt')">
+			Register Now
+		</button>
+	</div>
+</body>
+</html>
